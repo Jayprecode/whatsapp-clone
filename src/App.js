@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import './App.css';
 import Sidebar from "./Sidebar";
 import Chat from "./Chat.js";
@@ -7,6 +7,7 @@ import Login from "./Login";
 import { useStateValue } from "./StateProvider";
 
 function App() {
+  // eslint-disable-next-line
   const [{ user }, dispatch] = useStateValue();
 
   return (

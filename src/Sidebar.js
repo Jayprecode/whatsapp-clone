@@ -14,6 +14,7 @@ import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
   const [rooms, setRooms] = useState([]);
+// eslint-disable-next-line
   const [{ user }, dispatch] = useStateValue();
 
   useEffect(() => {
@@ -31,8 +32,7 @@ function Sidebar() {
     }
   }, []);
 
-
-
+  
     return (
       <div className="sidebar">
         <div className="sidebar__header">
@@ -52,7 +52,7 @@ function Sidebar() {
         <div className="sidebar__search">
           <div className="sidebar__searchContainer">
             <SearchOutlined />
-            <input placeholder="Search or start new chart" type="text" />
+            <input placeholder="Search or start new chat" type="text" />
           </div>
         </div>
         <div className="sidebar__chats">

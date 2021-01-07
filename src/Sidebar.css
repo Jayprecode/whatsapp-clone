@@ -3,40 +3,14 @@
     flex-direction: column;
     flex: 0.30;
 }
-.sidebar__search {
-    display: flex;
-    align-items: center;
-    background-color: #131C21;
-    height: 39px;
-    padding: 10px;
-    outline: none;
-}
-.sidebar__searchContainer {
-    display: flex;
-    align-items: center;
-    background-color:#323739;
-    width: 100%;
-    height: 35px;
-    border-radius: 20px;
-    color: #fff;
-}
-.sidebar__searchContainer > .MuiSvgIcon-root {
-    color: gray;
-    padding: 10px;
-}
-.sidebar__searchContainer > input {
-    border: none;
-    outline: none;
-    margin-left: 10px;
-    background: transparent;
-    width: 250px;
-}
+
 .sidebar__header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: #323739;
-    border-right: 1px solid lightgray;
+    background-color: #2A2F32;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-width: thin;
 }
 .sidebar__headerRight {
     display: flex;
@@ -48,10 +22,63 @@
 .sidebar__headerRight > .MuiSvgIcon-root {
     margin-right: 2vw;
     font-size: 20px !important;
+    background-color: gray;
+}
+.sidebar__search {
+    display: flex;
+    align-items: center;
+    background-color: #131C21;
+    height: 39px;
+    padding: 10px;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom-width: thin;
+}
+.sidebar__searchContainer {
+    display: flex;
+    align-items: center;
+    background-color:#323739;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    color: #fff;
+    
+}
+.sidebar__searchContainer > .MuiSvgIcon-root {
+    color: gray;
+    padding: 10px;
+}
+.sidebar__searchContainer > input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    background: transparent;
+    width: 250px;
+    font-family: 'Segoe UI';
+    color: #bdbdbd;
+    font-size: 15px;
+    line-height: 100px;
+    font-weight: 500;
+}
+.sidebar__searchContainer > input::placeholder {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
 }
 .sidebar__chats {
     flex: 1;
     background-color: #131C21;
-    overflow: scroll;
+    overflow-y: scroll;
 }
-
+.sidebar__chats::-webkit-scrollbar {
+    width: 7px;
+}
+.sidebar__chats::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.sidebar__chats::-webkit-scrollbar-thumb {
+  background-color: #384044;
+  outline: 1px solid #131C21;
+}

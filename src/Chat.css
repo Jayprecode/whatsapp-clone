@@ -79,14 +79,15 @@
 .chat__footer > form {
     flex:1;
     display: flex;
-
+    border: none;
 }
 .chat__footer > form > input {
     flex:1;
     border-radius: 30px;
     padding: 10px;
     border: none;
-    background-color: #262D31;
+    background-color: #323739;
+    outline: none;
 }
 .chat__footer > form > button {
     display: none;
