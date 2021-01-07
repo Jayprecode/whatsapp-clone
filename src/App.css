@@ -7,8 +7,8 @@
 .app__body {
   display: flex;
   background-color: #ededed;
-  margin-top: -30px;
-  height: 90vh;
-  width: 90vw;
-  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
+  margin-top: -10px;
+  height: 95vh;
+  width: 95vw;
+  box-shadow: 6px 10px 20px -6px rgba(0, 0, 0, 0.7);
 }

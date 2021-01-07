@@ -7,7 +7,7 @@
     padding: 10px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    background-color: #2A2F32;
 }
 .chat__headerInfo {
     flex: 1;
@@ -51,9 +51,10 @@
 }
 .chat__body {
     flex: 1;
-    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
-    background-repeat: no-repeat 50%;
+    background-image: url(./darkimg.png);
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     padding: 30px;
     overflow: scroll;
     /* Hide scrollbar for IE, Edge and Firefox */
@@ -73,17 +74,19 @@
     justify-content: space-between;
     align-items: center;
     height: 62px;
-    border-top: 1px solid lightgray;
+    background-color: #1E2428;
 }
 .chat__footer > form {
     flex:1;
     display: flex;
+
 }
 .chat__footer > form > input {
     flex:1;
     border-radius: 30px;
     padding: 10px;
     border: none;
+    background-color: #262D31;
 }
 .chat__footer > form > button {
     display: none;
