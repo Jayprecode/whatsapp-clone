@@ -4,6 +4,10 @@
     cursor: pointer;
     border-bottom: 0.7px solid #f6f6f6;
 }
+a {
+    text-decoration: none !important;
+    color:white;
+}
 .sidebarChat:hover {
     background-color: #ebebeb;
 }

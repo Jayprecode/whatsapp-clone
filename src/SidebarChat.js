@@ -16,10 +16,11 @@ function SidebarChat({ id, name, addNewChat }) {
                 .collection("messages")
                 .orderBy("timestamp", "desc")
                 .onSnapshot((snapshot) =>
+                    // @ts-ignore
                     setMessages(snapshot.docs.map((doc) => doc.data()))
                 );
             }
-    }, []);
+    }, [id]);
     
     useEffect(() => {
         // @ts-ignore
@@ -41,7 +42,9 @@ function SidebarChat({ id, name, addNewChat }) {
                 <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
                 <div className="sidebarChat__info">
                     <h2>{name}</h2>
-                    <p>{messages[0]?.message}</p>
+                    <p>{messages[0]?.
+// @ts-ignore
+                    message}</p>
                 </div>
             </div>
         </Link>
