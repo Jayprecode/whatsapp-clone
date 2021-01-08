@@ -30,26 +30,27 @@
 
 .chat__message {
     position: relative;
-    font-size: 16px;
+    margin-top: 5px;
+    font-size: 14px;
     padding: 10px;
+    color: #fff;
     border-radius: 10px;
     width: fit-content;
-    background-color: #ffffff;
-    margin-bottom: 30px;
-}
-.chat__name {
-    position: absolute;
-    top: -15px;
-    font-weight: 800;
-    font-size: xx-small;
+    background-color:#262D30;
+    margin-bottom: 15px;
+    height: 20px;
 }
 .chat__receiver {
     margin-left: auto;
-    background-color: #dcf8c6;
+    background-color:#056162;
+    color: #fff;
 }
 .chat__timestamp {
+    position: relative;
+    top: 10px;
     margin-left: 10px;
-    font-size: xx-small
+    font-size: 11px;
+
 }
 .chat__headerRight {
     display: flex;
@@ -64,7 +65,7 @@
     background-image: url(./bg-chat-tile-dark.png);
     background-repeat: repeat;
     background-position: center;
-    background-color: #0c1417;
+    background-color: #090E11;
     padding: 30px;
     overflow-y: scroll;
 }

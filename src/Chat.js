@@ -58,7 +58,7 @@ function Chat() {
         <div className="chat__headerInfo">
           <h3>{roomName}</h3>
           <p>
-            last seen{" "}
+            last seen{""}
             {new Date(
               messages[messages.length - 1]?.timestamp?.toDate()
             ).toUTCString()}
@@ -80,7 +80,6 @@ function Chat() {
               message.name === user.displayName && "chat__receiver"
             }`}
           >
-            <span className="chat__name">{message.name}</span>
             {message.message}
             <span className="chat__timestamp">
               {new Date(message.timestamp?.toDate()).toUTCString()}
