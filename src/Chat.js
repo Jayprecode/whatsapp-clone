@@ -58,7 +58,7 @@ function Chat() {
         <div className="chat__headerInfo">
           <h3>{roomName}</h3>
           <p>
-            last seen{""}
+            last seen{" "}
             {new Date(
               messages[messages.length - 1]?.timestamp?.toDate()
             ).toUTCString()}
@@ -67,9 +67,6 @@ function Chat() {
         <div className="chat__headerRight">
           <IconButton>
             <SearchOutlined />
-          </IconButton>
-          <IconButton>
-            <AttachFile />
           </IconButton>
           <IconButton>
             <MoreVert />
@@ -93,7 +90,12 @@ function Chat() {
       </div>
 
       <div className="chat__footer">
-        <InsertEmoticon />
+        <IconButton>
+          <InsertEmoticon />
+        </IconButton>
+        <IconButton>
+          <AttachFile />
+        </IconButton>
         <form>
           <input
             value={input}
@@ -105,7 +107,9 @@ function Chat() {
             Send a message
           </button>
         </form>
-        <MicIcon />
+        <IconButton>
+          <MicIcon />
+        </IconButton>
       </div>
     </div>
   );

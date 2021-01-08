@@ -1,6 +1,6 @@
 .sidebarChat {
     display: flex;
-    padding: 15px;
+    padding: 13px;
     cursor: pointer;
 }
 a {
@@ -11,11 +11,16 @@ a {
 .sidebarChat:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+.sidebarChat > h2 {
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 400;
+}
 .sidebarChat__info > h2 {
     font-family: 'Segoe UI';
     font-size: 17px;
     font-weight: 400;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 .sidebarChat__info {
     margin-left: 15px;
@@ -24,6 +29,7 @@ a {
     font-family: 'Segoe UI';
     font-size: 14px;
     color: gray;
+
 }
 hr {
     position: relative;
